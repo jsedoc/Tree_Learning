@@ -28,3 +28,10 @@ Attention paper  - https://arxiv.org/pdf/1508.04025.pdf
 Parameter initialization - Xavier Glorot and Yoshua Bengio. 2010. Understanding the difficulty of training deep feedforward neural networks. In Proceedings of AISTATS
 
 useful blog http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/
+
+---
+# (2/11)
+
+X2Tree https://arxiv.org/pdf/1705.00321.pdf
+RNNG https://arxiv.org/pdf/1602.07776.pdf
+DRNN https://openreview.net/pdf?id=HkYhZDqxg
