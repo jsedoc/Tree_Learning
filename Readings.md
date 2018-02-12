@@ -32,8 +32,8 @@ useful blog http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-
 ---
 # (2/11)
 
-X2Tree https://arxiv.org/pdf/1705.00321.pdf
-
 RNNG https://arxiv.org/pdf/1602.07776.pdf
 
 DRNN https://openreview.net/pdf?id=HkYhZDqxg
+
+X2Tree https://arxiv.org/pdf/1705.00321.pdf
