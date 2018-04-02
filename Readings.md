@@ -37,3 +37,10 @@ RNNG https://arxiv.org/pdf/1602.07776.pdf
 DRNN https://openreview.net/pdf?id=HkYhZDqxg
 
 X2Tree https://arxiv.org/pdf/1705.00321.pdf
+
+---
+# (4/2)
+
+Text simplification via tree transduction http://www.aclweb.org/anthology/P14-1041
+TED http://tree-edit-distance.dbresearch.uni-salzburg.at/
+Transduce with Unbounded Memory https://arxiv.org/pdf/1506.02516.pdf
