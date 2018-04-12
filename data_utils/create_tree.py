@@ -77,6 +77,30 @@ def prefix(my_tree, my_list):
 
     return my_list
 
+def convert_nltk_tree_to_binarytree(nltk_tree, my_tree):
+    if type(nltk_tree) == type(''):
+        import pdb; pdb.set_trace()
+    my_tree.value = nltk_tree.label()
+
+    # import pdb; pdb.set_trace()
+    if len(nltk_tree) > 2:
+        raise ValueError('We can only take binary trees')
+    if len(nltk_tree) > 1:
+        my_tree.right = Node(0)
+        if type(nltk_tree[1]) != type(''):
+            convert_nltk_tree_to_binarytree(nltk_tree[1], my_tree.right)
+        else:
+            my_tree.right = Node(nltk_tree[1])
+    if len(nltk_tree) > 0:
+        my_tree.left = Node(0)
+        if type(nltk_tree[0]) != type(''):
+            convert_nltk_tree_to_binarytree(nltk_tree[0], my_tree.left)
+        else:
+            my_tree.left = Node(nltk_tree[0])
+
+
+    return my_tree
+
 
 from pythonds.basic.stack import Stack
 
@@ -122,6 +146,6 @@ if __name__ == "__main__":
 
     #print infix_tree
     #print(infixToPostfix(infix_tree))
-    #print ' '.join(str(e) for e in prefix(my_tree,[]))
-    print ' '.join(str(e) for e in convert_to_list_nltk(my_tree,[]))
+    print(' '.join(str(e) for e in prefix(my_tree,[])))
+    print(' '.join(str(e) for e in convert_to_list_nltk(my_tree,[])))
     #print convert(my_tree)
